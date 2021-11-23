@@ -8,7 +8,7 @@ html
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
-}
+} 
 
 h1 
 {
@@ -16,6 +16,11 @@ h1
     font-weight: 600;
     font-size: 1.5rem;
     color: #fff;
+}
+
+a 
+{
+    text-decoration: none;
 }
 
 span 
@@ -28,6 +33,12 @@ span
     background-color: hsl(216, 50%, 16%);
     padding: 1.5rem;
 }
+
+.main 
+{
+    vertical-align: bottom;
+}
+
 .container, .main 
 {
     border-radius: .5em;
@@ -78,6 +89,11 @@ span
     border-top: 1px solid hsl(215, 32%, 27%);
 } 
 
+.JW 
+{
+    color: #fff;
+}
+
 img.icons 
 {
     margin-right: 7px;
@@ -94,12 +110,58 @@ img.Ppic
 { 
     position: absolute;
     bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
     padding: 2em;
     font-size: 11px; 
-    text-align: center; 
+    text-align: center;
 }
 
 .attribution a 
 {
     color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 750px)
+{
+    .main
+    {
+        height: 20em;
+        width: 20em;   
+    }
+    
+    .test
+    {
+        position: relative;
+    }
+
+    .view 
+    {
+        background: hsl(178, 100%, 50%, .5);
+        width: 20em;
+        height: 20em;  
+        visibility: hidden;
+        border-radius: .5em; 
+
+    } 
+    .view, .eye 
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+    }
+
+    h1:hover,
+    h1:focus,
+    .JW:hover,
+    .JW:focus
+    {
+        color: hsl(178, 100%, 50%);
+    }
+    .test:hover .view 
+    {
+        visibility: visible;
+    }
 }
