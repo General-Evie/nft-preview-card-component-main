@@ -15,20 +15,45 @@ h1
     font-family: 'Outfit';
     font-weight: 600;
     font-size: 1.5rem;
+    color: #fff;
+}
+
+span 
+{
+    padding-right: .5ch;
 }
 
 .container 
 {
-    text-align: center;
     background-color: hsl(216, 50%, 16%);
-    padding: 1rem;
+    padding: 1.5rem;
+}
+.container, .main 
+{
+    border-radius: .5em;
 }
 
  span, .info, .time
 {
     font-family: 'Outfit';
-    font-weight: 300;
     opacity: .5;
+    color: #fff;
+}
+
+.columns 
+{
+   columns: 2;
+} 
+
+.info 
+{
+    width: 25ch;
+}
+
+.time, .ETH, .creator
+{
+    display: flex;
+    align-items: center;
 }
 
 .ETH 
@@ -38,14 +63,38 @@ h1
     color: hsl(178, 100%, 50%);
 }
 
+.time 
+{
+    justify-content: end;
+}
+
 .creator 
 {
     font-family: 'Outfit';
     font-weight: 300;
+    color: #fff;
+    margin-bottom: 0;
+    padding-top: 1em;
+    border-top: 1px solid hsl(215, 32%, 27%);
 } 
+
+img.icons 
+{
+    margin-right: 7px;
+}
+
+img.Ppic 
+{
+    margin-right: 15px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
 
 .attribution 
 { 
+    position: absolute;
+    bottom: 0;
+    padding: 2em;
     font-size: 11px; 
     text-align: center; 
 }
